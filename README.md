@@ -19,5 +19,5 @@ The following steps are taken:
 * Attempt 1 - Add more hidden layers and reduce the number of epochs in the training regime
 * Attempt 2 - Use different activation functions for the hidden layers and reduce the number of epochs in the training regime
 
-5. Evaluate the model using the loss and accuracy metrics
+5. Evaluate the models using the loss and accuracy metrics
 
