@@ -10,7 +10,7 @@ The following steps are taken:
 * Categorical variables are encoded using OneHotEncoder (an alternative to pandas get_dummies function).
 * Numerical variables of the original datafrme was added to the dataframe that contains the encoded variables. 
 
-2. **Preprocess data** - The "IS_SUCCESSFUL" column set as the target. The remaining columns are defined as the features dataset. Data is then split into two sets: training set and testing set.  StandardScaler from scikit-learn is used to scale the feature data.
+2. **Preprocess data** - The "IS_SUCCESSFUL" column sets as the target. The remaining columns are defined as the features dataset. Data is then split into two sets: training set and testing set.  StandardScaler from scikit-learn is used to scale the feature data.
 
 3. **Design the model** - Use TensorFlow to design a binary classification deep neural network model. <br>
 **Model 1** is a two-layer deep neural network model that uses "relu" activation function for both layers. Model 1 is then compiled using the binary_crossentropy loss function, the "adam" optimiser and the "accuracy" evaluation metric. Model 1 is then fit using 50 epochs.
@@ -20,7 +20,7 @@ The following steps are taken:
 
 * Attempt 2 (Alternative Model 2) - Use different activation functions for the hidden layers and reduce the number of epochs in the training regime. Use the same parameter values as model 1 for compilation. 
 
-5.**Evaluate the models** using the loss and accuracy metrics
+5. **Evaluate the models** using the loss and accuracy metrics
 
 ### Results
 |  | Loss Score | Accuracy Score |
