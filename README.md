@@ -12,12 +12,24 @@ The following steps are taken:
 
 2. **Preprocess data** - The "IS_SUCCESSFUL" column set as the target. The remaining columns are defined as the features dataset. Data is then split into two sets: training set and testing set.  StandardScaler from scikit-learn is used to scale the feature data.
 
-3. **Design the model** - Use TensorFlow to design a binary classification deep neural network model. 
-* Model 1 is a two-layer deep neural network model that uses "relu" activation function for both layers. Model 1 is then compiled using the binary_crossentropy loss function, the "adam" optimiser and the "accuracy" evaluation metric. Model 1 is then fit using 50 epochs.
+3. **Design the model** - Use TensorFlow to design a binary classification deep neural network model. <br>
+**Model 1** is a two-layer deep neural network model that uses "relu" activation function for both layers. Model 1 is then compiled using the binary_crossentropy loss function, the "adam" optimiser and the "accuracy" evaluation metric. Model 1 is then fit using 50 epochs.
 
 4. **Optimise the model**
-* Attempt 1 - Add more hidden layers and reduce the number of epochs in the training regime
-* Attempt 2 - Use different activation functions for the hidden layers and reduce the number of epochs in the training regime
+* Attempt 1 (Alternative Model 1) - Add more hidden layers and reduce the number of epochs in the training regime. Use the same parameter values as model 1 for compilation. 
+
+* Attempt 2 (Alternative Model 2) - Use different activation functions for the hidden layers and reduce the number of epochs in the training regime. Use the same parameter values as model 1 for compilation. 
 
 5.**Evaluate the models** using the loss and accuracy metrics
 
+### Results
+|  | Loss Score | Accuracy Score |
+|--|------------|----------------|
+|Model 1| 0.5507 | 0.7300 |
+|Alternative Model 1 | 0.5531 | 0.7329 |
+|Alternative Model 2 | 0.5509 | 0.7310 |
+
+The original model (Model 1) has an accurarcy score of 0.7300 and loss score of 0.5507. As we increase the number of hidden layers (Alternative Model 1), the accuray is slightly improved but no changes to losses. A different activation function (i.e. tanh instead of relu) does improve the accuracy slightly. 
+
+### Conclusion
+There is further opportunity to prune the model.  We recommend future pruning consider adjusting the input data by dropping different features combination or a combination of add more hidden layers and different activation functions.
