@@ -2,7 +2,7 @@
 
 The Alphabet Soup business has requested a model to predict whether the startup requesting for funding will become successful if funded by Alphabet Soup. To assist with the modelling, Alphabet Soup has provided various typs of information about more than 34000 organisation that they have provided funding over the years, including whether they ultimately became successful or not. 
 
-This exercise involves creating a binary classificary model, whether the applicant will be successful or not, using a deep neural network. 
+This exercise involves creating a binary classificary model using a deep neural network that output the indicator whether the applicant will be successful or not.
 
 The following steps are taken:
 1. **Prepare data** - Applicant information was provided in a CSV file. Read CSV file into a pandas dataframe, review data and check for categorical variables that will need to be encoded and for columns that might eventually define as features and target variables. 
