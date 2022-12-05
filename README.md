@@ -29,7 +29,7 @@ The following steps are taken:
 |Alternative Model 1 | 0.5531 | 0.7329 |
 |Alternative Model 2 | 0.5509 | 0.7310 |
 
-The original model (Model 1) has an accurarcy score of 0.7300 and loss score of 0.5507. As we increase the number of hidden layers (Alternative Model 1), the accuray is slightly improved but no changes to losses. A different activation function (i.e. tanh instead of relu) does improve the accuracy slightly. 
+The original model (Model 1) has an accurarcy score of 0.7300 and loss score of 0.5507. As we increase the number of hidden layers (Alternative Model 1), the accuray is slightly improved but no material improvement in loss score. A different activation function (i.e. tanh instead of relu) also improves the accuracy slightly but similarly no material improvement in the loss score. 
 
 ### Conclusion
 There is further opportunity to prune the model.  We recommend future pruning consider adjusting the input data by dropping different features combination or a combination of add more hidden layers and different activation functions.
